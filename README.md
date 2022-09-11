@@ -8,7 +8,7 @@ Batch Normalization,..) and at the end running a pre-trained  "Resnet" model as 
 VGG model Contains some main blocks and a final block that each block contains:
 two Convolutional layer with a 3x3 filter and
 Max-pooling to reduce volume size and final layer.
-About my data, I should say, I cannot be sent it directly to my neural network. I need to process the data in order to send it to the network. 
+About my data, I should say, it cannot be sent directly to my neural network. I need to process the data in order to send it to the network. 
 The first thing in the process is to reduce the pixel values. Currently, all the image pixels are in a range from 1-256, and I need to reduce those values to a value
 ranging between 0 and 1. This enables my model to easily track trends and efficient training. I can do this by dividing all pixel values by 255.0.
 Another thing I want to do is to flatten the label values, that means(rearrange them in form of a row) by the flatten() function. 
